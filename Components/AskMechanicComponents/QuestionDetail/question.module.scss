@@ -1,0 +1,166 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .wrapper {
+    width: 100%;
+    // max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 2.5rem 0rem 2.5rem;
+    box-sizing: border-box;
+    @media screen and (max-width: 600px) {
+      padding: 2rem 0 0 0;
+    }
+    .heading {
+      color: #000;
+      font-family: Roboto;
+      font-size: 19.995px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25.993px; /* 130% */
+      letter-spacing: -0.6px;
+      padding: 0rem 1rem;
+      span {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 19.995px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.993px; /* 130% */
+        letter-spacing: -0.6px;
+        border-radius: 4px;
+        background: #3d83df;
+        width: 100px;
+        height: 32px;
+        margin-right: 12px;
+        padding: 3px 10px;
+      }
+    }
+    .card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 99.9%;
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        box-sizing: border-box;
+        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.05);
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
+        label {
+          line-height: 1.5rem;
+          color: rgba(0, 0, 0, 0.667);
+          padding: 0.9rem 0.5rem;
+        }
+      }
+      .innerData {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 30px;
+        border-radius: 4px;
+        border: 1px solid #818181;
+        padding: 27px 17px 20px 17px;
+        .content {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          column-gap: 1rem;
+          border-radius: 8px;
+          box-sizing: border-box;
+          flex-direction: column;
+
+          .title {
+            padding: 0rem 1rem;
+            color: #fff;
+            font-family: Roboto;
+            font-size: 19.995px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25.993px;
+            letter-spacing: -0.6px;
+            border-radius: 4px;
+            background: #3d83df;
+            span {
+              color: #fff;
+              font-family: Roboto;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 25.993px; /* 162.459% */
+              letter-spacing: -0.6px;
+              padding-right: 10px;
+            }
+          }
+          .leftSide {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background: #edeff2;
+            color: #1b2734;
+            border-radius: 5px;
+            flex-direction: column;
+            margin-top: 12px;
+            @media screen and (max-width: 786px) {
+              width: 100%;
+            }
+            label {
+              padding: 1rem 1rem;
+              color: #000;
+              font-size: 19.995px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 25.993px; /* 130% */
+              letter-spacing: -0.6px;
+            }
+            .moreless {
+              padding: 0.4rem 1.9rem;
+              display: flex;
+              button {
+                background: #3d83df;
+                border-radius: 6px;
+                color: #ffffff;
+                border: 1px transparent;
+                padding: 0.1rem 0.8rem;
+                font-size: 15px;
+                font-weight: $fontWeight;
+                line-height: 22px;
+                height: 33px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    .devider {
+      width: 100%;
+      border-bottom: solid 1px $bgSec;
+    }
+    .questionsWrapper {
+      width: 100%;
+    }
+  }
+  .pagintaionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    padding-left: 0px !important;
+  }
+}

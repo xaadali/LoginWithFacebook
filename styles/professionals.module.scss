@@ -1,0 +1,25 @@
+@import "../stylesConstants/colors.scss";
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  .wrapper {
+    width: 100%;
+    padding: 3rem;
+    margin-top: 10rem;
+    box-sizing: border-box;
+    max-width: 1800px;
+    @media screen and (min-width: 1300px) and (max-width: 1800px) {
+      width: 80%;
+    }
+    @media screen and (min-width: 300px) and (max-width: 1100px) {
+      padding: 1rem;
+      box-sizing: border-box;
+      width: 100%;
+      border: none;
+      margin-top: 5rem;
+    }
+  }
+}

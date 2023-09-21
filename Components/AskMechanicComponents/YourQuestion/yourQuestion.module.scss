@@ -1,0 +1,126 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // row-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    // padding: 2.5rem 0;
+    box-sizing: border-box;
+    .questionForm {
+      // background: #d3dfef;
+      // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+      @media screen and (min-width: 300px) and (max-width: 768px) {
+        padding: 0rem;
+        margin-top: 2rem;
+      }
+
+      .inputWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        label {
+          font-size: $fontSize;
+          font-weight: 900;
+          line-height: 22px;
+          color: #1b2734;
+          @media screen and (max-width: 600px) {
+            font-size: 15px;
+          }
+        }
+        .errorStyle {
+          color: $errorColor;
+          font-size: 13px;
+        }
+        .inputStyle {
+          background: $whiteColor;
+          border: 1px solid $bgSec;
+          border-radius: 6px;
+          height: 150px;
+          padding: 1rem 1rem;
+          width: 100%;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 0.5rem;
+          @media screen and (max-width: 1024px) {
+            height: 150px;
+          }
+          textarea {
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #1b2734;
+            font-family: "Roboto";
+
+            &::placeholder {
+              color: #98a1ab;
+              font-size: $fontSize;
+              @media screen and (max-width: 600px) {
+                font-size: $smPara;
+              }
+            }
+          }
+        }
+      }
+      .notesWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        // padding-left: 5rem;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
+
+        p {
+          font-size: $fontSize;
+          color: $blackColor;
+          line-height: 35px;
+        }
+      }
+      .btnWrapper {
+        width: 100%;
+        button {
+          background-color: $primary;
+          padding: 0.8rem 2rem;
+          box-sizing: border-box;
+          text-align: center;
+          color: $whiteColor;
+          transition: 0.4s;
+          max-width: 200px;
+          font-weight: $lightWeight;
+          font-size: 15px;
+          border: none;
+          border-radius: $borderRadius;
+          cursor: pointer;
+          outline: none;
+          font-family: "Roboto";
+          @media screen and (min-width: 600px) and (max-width: 1024px) {
+            font-size: 14px;
+          }
+          @media screen and (max-width: 600px) {
+            padding: 0.6rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}

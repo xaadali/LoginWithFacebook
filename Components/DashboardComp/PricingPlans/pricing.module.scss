@@ -1,0 +1,212 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    margin: 0;
+    width: 100%;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    display: none;
+    align-items: center;
+    color: #1b2734;
+    margin-left: 7px;
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+  .wrapper {
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    .header {
+      background: #fbfbff;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .leftSide {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        .heading {
+          font-size: 30px;
+          font-weight: $fontWeight;
+          color: $blackColor;
+          span {
+            color: $primary;
+          }
+        }
+        .date {
+          font-size: $fontSize;
+          font-weight: $fontWeight;
+          color: $blackColor;
+        }
+      }
+      .btnWrapper {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-items: center;
+        cursor: pointer;
+        .btn {
+          border-radius: $borderRadius;
+          background-color: $primary;
+          border: 1px solid $primary;
+          color: $whiteColor;
+          padding: 0.7rem 2rem;
+        }
+      }
+    }
+    .middleWrapper {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      justify-content: flex-start;
+
+      .heading {
+        font-size: 50px;
+        line-height: 79px;
+        color: $blackColor;
+        font-weight: $fontWeight;
+      }
+      .para {
+        font-size: $paraFont;
+        color: $blackColor;
+        font-weight: $lightWeight;
+      }
+    }
+    .cardWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-self: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .wrapper {
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+      max-width: 1800px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      .header {
+        background: #fbfbff;
+        border-radius: 12px;
+        padding: 2rem 0.5rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        .leftSide {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          row-gap: 1.5rem;
+          .heading {
+            font-size: 20px;
+            font-weight: $fontWeight;
+            color: $blackColor;
+            text-align: left;
+            span {
+              color: $primary;
+            }
+          }
+          .date {
+            font-size: $fontSize;
+            font-weight: $fontWeight;
+            color: $blackColor;
+          }
+        }
+        .btnWrapper {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          align-items: center;
+          margin-top: 10px;
+          cursor: pointer;
+          .btn {
+            border-radius: $borderRadius;
+            background-color: $primary;
+            border: 1px solid $primary;
+            color: $whiteColor;
+            padding: 0.7rem 2rem;
+          }
+        }
+      }
+      .middleWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        justify-content: flex-start;
+
+        .heading {
+          font-size: 34px;
+          line-height: 50px;
+          color: $blackColor;
+          font-weight: $fontWeight;
+          text-align: center;
+        }
+        .para {
+          font-size: 16px;
+          line-height: 30px;
+          color: $blackColor;
+          font-weight: $lightWeight;
+          text-align: center;
+        }
+      }
+      .cardWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+.paymentCycleWrap {
+  width: 25%;
+  @media screen and (min-width: 300px) and (max-width: 1400px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 300px) and (max-width: 786px) {
+    display: none;
+
+  }
+}

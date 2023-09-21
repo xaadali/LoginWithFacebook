@@ -1,0 +1,331 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  // margin-top: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  row-gap: 1rem;
+  height: 70vh;
+  @media screen and (max-width: 1024px) {
+    // padding: 1rem;
+    box-sizing: border-box;
+    margin-top: 0rem;
+  }
+  .wrapper {
+    width: 68%;
+    max-width: 1800px;
+    // padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      width: 100% !important;
+    }
+    .title {
+      display: none;
+      font-size: 20px;
+      font-weight: $fontWeight;
+      color: #1b2734;
+      align-items: flex-start;
+      text-align: start;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 3rem;
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+    }
+    .card {
+      @media screen and (max-width: 600px) {
+        width: 100% !important;
+        padding: 1rem;
+      }
+      @media screen and (min-width: 700px) {
+        width: 100% !important;
+      }
+      width: 100% !important;
+      height: auto;
+      box-sizing: border-box;
+      border: 1px solid #dcdfe3;
+      border-radius: 7px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      row-gap: 2rem;
+      padding: 2rem;
+
+      .heading {
+        display: none;
+        font-size: 20px;
+        font-weight: $fontWeight;
+        color: #1b2734;
+        margin-bottom: 1rem;
+        @media screen and (min-width: 1024px) {
+          display: block;
+        }
+        @media screen and (max-width: 778px) {
+          font-size: $smHeadingSIze;
+        }
+      }
+      .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        @media screen and (max-width: 600px) {
+          row-gap: 3rem;
+        }
+        .inputWrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          // @media screen and (max-width: 400px) {
+          //   flex-direction: column;
+          //   row-gap: 1rem;
+          // }
+
+          label {
+            width: 35%;
+            font-size: 15px !important;
+            font-weight: 700;
+            color: #1b2734;
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            @media screen and (min-width: 300px) and (max-width: 500px) {
+              // width: 50%;
+              font-size: $smPara;
+            }
+            @media screen and (min-width: 501px) {
+              font-size: $smPara;
+              width: 30%;
+            }
+          }
+          .nameBox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 5px;
+            width: 100%;
+            @media screen and (min-width: 300px) and (max-width: 600px) {
+              width: 100%;
+            }
+            .inputStyle {
+              background: $whiteColor;
+              border: 1px solid $bgSec;
+              border-radius: 5px;
+              height: 40px;
+              padding: 0.1rem 1rem;
+              width: 60%;
+              box-sizing: border-box;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              row-gap: 5px;
+              column-gap: 0.5rem;
+              @media screen and (max-width: 1024px) {
+                height: 40px;
+              }
+              @media screen and (min-width: 300px) and (max-width: 600px) {
+                width: 100%;
+              }
+              input {
+                @media screen and (min-width: 300px) and (max-width: 600px) {
+                  width: 100%;
+                }
+                height: 100%;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: black;
+                &::placeholder {
+                  color: #495057;
+                  font-size: 15px;
+                  @media screen and (max-width: 600px) {
+                    font-size: $smPara;
+                  }
+                }
+              }
+            }
+            .errorStyle {
+              color: $errorColor;
+              font-size: 13px;
+              width: 100%;
+            }
+          }
+        }
+
+        .row {
+          width: 73%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            width: 100%;
+          }
+
+          label {
+            width: 35%;
+            font-size: 15px;
+            font-weight: $fontWeight;
+            color: #1b2734;
+            mix-blend-mode: normal;
+            @media screen and (max-width: 500px) {
+              font-size: $smPara;
+            }
+          }
+          .passwordBox {
+            width: 75%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: #1662c6;
+            font-size: 15px;
+            cursor: pointer;
+            @media screen and (min-width: 300px) and (max-width: 600px) {
+              width: 100%;
+              font-size: $smPara;
+            }
+          }
+          .emailBox {
+            width: 75%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: #1b2734;
+            font-size: 15px;
+            cursor: pointer;
+            @media screen and (min-width: 300px) and (max-width: 600px) {
+              width: 100%;
+              font-size: $smPara;
+            }
+            span {
+              color: #1662c6;
+              font-size: 15px;
+              cursor: pointer;
+            }
+          }
+        }
+        .devider {
+          width: 100%;
+          border-bottom: solid 1px $bgSec;
+          margin: 10px 0px;
+          @media screen and (max-width: 600px) {
+            margin: 5px 0px;
+          }
+          @media screen and (max-width: 500px) {
+            display: none;
+          }
+        }
+        .footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+          width: 100%;
+          // @media screen and (max-width: 400px) {
+          //   flex-direction: column;
+          //   row-gap: 1rem;
+          // }
+          .btnWrapper {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @media screen and (max-width: 400px) {
+              width: 100%;
+              align-items: center;
+              justify-content: center;
+            }
+            @media screen and (min-width: 401px) and (max-width: 700px) {
+              width: 40%;
+            }
+            button {
+              font-family: "Roboto";
+              background-color: $primary;
+              padding: 0.8rem 2rem;
+              box-sizing: border-box;
+              text-align: center;
+              color: $whiteColor;
+              transition: 0.4s;
+              font-weight: 500;
+              font-size: 15px;
+              border: none;
+              border-radius: 3px;
+              cursor: pointer;
+              outline: none;
+              @media screen and (max-width: 600px) {
+                font-size: 12px;
+                font-weight: $lightWeight;
+              }
+              @media screen and (max-width: 600px) {
+                padding: 0.6rem 1rem;
+              }
+            }
+            .cancelBtn {
+              background-color: transparent;
+              margin-left: 0.5rem;
+              //   width: 50%;
+              padding: 0.8rem 2rem;
+              box-sizing: border-box;
+              text-align: center;
+              color: #1662c6;
+              transition: 0.4s;
+              //   max-width: 50%;
+              font-weight: 600;
+              font-size: 15px;
+              border: none;
+              font-family: Roboto;
+              @media screen and (max-width: 600px) {
+                font-size: 14px;
+                font-weight: $lightWeight;
+              }
+            }
+          }
+          .deleteAccount {
+            @media screen and (min-width: 300px) and (max-width: 600px) {
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+            }
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: center;
+            cursor: pointer;
+            font-family: Roboto;
+            .icon {
+              color: $errorColor;
+              font-size: $fontSize;
+              margin-right: 5px;
+              @media screen and (max-width: 600px) {
+                font-size: 14px;
+                font-weight: $lightWeight;
+              }
+            }
+            span {
+              color: #627282;
+              font-size: 15px;
+              text-align: center;
+              @media screen and (max-width: 600px) {
+                font-size: 14px;
+                font-weight: $lightWeight;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

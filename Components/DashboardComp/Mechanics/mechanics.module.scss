@@ -1,0 +1,406 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1800px;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    width: 94%;
+    justify-content: flex-start;
+    margin: 10px 0 0 0;
+    display: none;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+  .wrapper {
+    width: 90%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cardWrapper {
+      width: 100%;
+      display: flex;
+      // flex-wrap: wrap;
+      flex-direction: column;
+      row-gap: 1rem;
+      column-gap: 1rem;
+      border: 1px solid #dcdfe3;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 7px;
+      padding: 1rem;
+      // box-sizing: border-box;
+      @media screen and (max-width: 500px) {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+        row-gap: 10px;
+        border: none;
+        margin-top: 1rem;
+      }
+      // @media screen and (min-width: 600px) and (max-width: 1040px) {
+      //   justify-content: center;
+      // }
+      @media screen and (min-width: 1400px) and (max-width: 2500px) {
+        width: 70% !important;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 100%;
+        border-bottom: 1px solid #dcdfe3;
+        border-radius: 4px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position: relative;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 1024px) {
+          flex-direction: column;
+          padding: 1rem;
+          border: 1px solid #dcdfe3;
+        }
+        // &:last-child {
+        //   border-bottom: none;
+        // }
+        .left {
+          display: flex;
+          column-gap: 2rem;
+          width: 100%;
+          // cursor: pointer;
+          @media screen and (max-width: 425px) {
+            flex-direction: row;
+            column-gap: 10px;
+            justify-content: center;
+            align-items: flex-start;
+          }
+
+          .imgWrapper {
+            width: 160px;
+            height: 130px;
+            background-color: #edeff2;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width: 425px) and (max-width: 710px) {
+              width: 150px;
+              height: 100px;
+            }
+            @media screen and (max-width: 425px) {
+              width: 90px;
+              height: 90px;
+            }
+            img {
+              width: 90%;
+              height: 90%;
+              @media screen and (min-width: 425px) and (max-width: 710px) {
+                width: 90%;
+                height: 90%;
+              }
+              @media screen and (max-width: 425px) {
+                width: 90%;
+                height: 90%;
+              }
+            }
+          }
+          .content {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 1rem;
+
+            .upperContent {
+              width: 100%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              flex-direction: column;
+              row-gap: 0.5rem;
+              @media screen and (max-width: 500px) {
+                margin-top: 20px;
+              }
+              .title {
+                font-size: 20px;
+                font-weight: $fontWeight;
+                color: #1b2734;
+                cursor: pointer;
+                transition: 0.5s;
+                @media screen and (min-width: 700px) and (max-width: 850px) {
+                  font-size: $fontSize;
+                }
+                &:hover {
+                  transition: 0.5s;
+                  color: #3d83df;
+                }
+              }
+              .subTitle {
+                font-size: 14px;
+                font-weight: $lightWeight;
+                color: #627282;
+              }
+              .ratingBox {
+                display: flex;
+                flex-direction: row;
+                column-gap: 1rem;
+                align-items: center;
+                @media screen and (min-width: 700px) and (max-width: 850px) {
+                  margin-top: 0.5rem;
+                }
+                @media screen and (min-width: 300px) and (max-width: 550px) {
+                  margin-top: 0px;
+                }
+                .stars {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 20px;
+                  font-weight: $fontWeight;
+                  color: $greenColor;
+                  column-gap: 0.5rem;
+                  @media screen and (min-width: 300px) and (max-width: 550px) {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                  }
+                  .ratingBox {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #00c3a5;
+                    border-radius: 100%;
+                  }
+                }
+                .reviews {
+                  font-size: $fontSize;
+                  font-weight: $lightWeight;
+                  color: #627282;
+
+                  @media screen and (min-width: 300px) and (max-width: 550px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+
+            .btnWrapperInside {
+              display: none;
+              flex-direction: row;
+              column-gap: 1rem;
+              @media screen and (min-width: 300px) and (max-width: 400px) {
+                flex-direction: column;
+                row-gap: 1rem;
+              }
+              @media screen and (min-width: 1024px) {
+                display: flex;
+              }
+              .bookButton {
+                border: none;
+                padding: 0rem 2rem 0rem 2rem;
+                outline: none;
+                color: $whiteColor;
+                background: $primary;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 41.52px;
+                cursor: pointer;
+                @media screen and (min-width: 700px) and (max-width: 850px) {
+                  padding: 0rem 1rem 0rem 1rem;
+                }
+                @media screen and (min-width: 300px) and (max-width: 550px) {
+                  height: 40px;
+                  padding: 0rem 0.5rem 0rem 0.5rem;
+                }
+
+                span {
+                  margin-left: 4px;
+                  font-size: $paraFont;
+                  @media screen and (min-width: 700px) and (max-width: 850px) {
+                    font-size: $smPara;
+                  }
+                  @media screen and (min-width: 300px) and (max-width: 550px) {
+                    font-size: 10px;
+                  }
+                }
+                .icon {
+                  font-size: $fontSize;
+                  @media screen and (min-width: 300px) and (max-width: 550px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+              .sendButton {
+                cursor: pointer;
+                border: none;
+                padding: 0rem 2rem 0rem 2rem;
+                outline: none;
+                color: #3d83df;
+                background: $whiteColor;
+                border-radius: 3px;
+                height: 41.52px;
+                border: 1px solid #3d83df;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                &:hover {
+                  background-color: #3d83df;
+                  color: $whiteColor;
+                  transition: 0.5s;
+                  img {
+                    filter: brightness(4);
+                  }
+                }
+                @media screen and (min-width: 700px) and (max-width: 850px) {
+                  padding: 0rem 1rem 0rem 1rem;
+                }
+                @media screen and (min-width: 300px) and (max-width: 550px) {
+                  padding: 0rem 0.5rem 0rem 0.5rem;
+                  height: 40px;
+                }
+                span {
+                  margin-left: 4px;
+                  font-size: 15px;
+                  @media screen and (min-width: 700px) and (max-width: 850px) {
+                    font-size: $smPara;
+                  }
+                  @media screen and (min-width: 300px) and (max-width: 550px) {
+                    font-size: 10px;
+                  }
+                }
+                .icon {
+                  font-size: $fontSize;
+                  @media screen and (min-width: 300px) and (max-width: 550px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .btnWrapper {
+          display: none;
+          flex-direction: row;
+          column-gap: 1rem;
+          margin-top: 1rem;
+          width: 100%;
+
+          @media screen and (max-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+          }
+          .bookButton {
+            border: none;
+            padding: 0rem 2rem 0rem 2rem;
+            outline: none;
+            color: $whiteColor;
+            background: $primary;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 41.52px;
+            cursor: pointer;
+            @media screen and (min-width: 700px) and (max-width: 850px) {
+              padding: 0rem 1rem 0rem 1rem;
+            }
+            @media screen and (min-width: 300px) and (max-width: 550px) {
+              height: 40px;
+              padding: 0rem 0.5rem 0rem 0.5rem;
+              width: 100%;
+            }
+
+            span {
+              margin-left: 4px;
+              font-size: $paraFont;
+              @media screen and (min-width: 700px) and (max-width: 850px) {
+                font-size: $smPara;
+              }
+              @media screen and (min-width: 300px) and (max-width: 550px) {
+                font-size: 10px;
+              }
+            }
+            .icon {
+              font-size: $fontSize;
+              @media screen and (min-width: 300px) and (max-width: 550px) {
+                font-size: 12px;
+              }
+            }
+          }
+          .sendButton {
+            cursor: pointer;
+            border: none;
+            padding: 0rem 2rem 0rem 2rem;
+            outline: none;
+            color: #3d83df;
+            background: $whiteColor;
+            border-radius: 3px;
+            height: 41.52px;
+            border: 1px solid #3d83df;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            &:hover {
+              box-shadow: inset -71px 0 0 0 #3d83df, inset 71px 0 0 0 #3d83df;
+              color: #3d83df;
+            }
+            @media screen and (min-width: 700px) and (max-width: 850px) {
+              padding: 0rem 1rem 0rem 1rem;
+            }
+            @media screen and (min-width: 300px) and (max-width: 550px) {
+              padding: 0rem 0.5rem 0rem 0.5rem;
+              height: 40px;
+              width: 100%;
+            }
+            span {
+              margin-left: 4px;
+              font-size: 15px;
+              @media screen and (min-width: 700px) and (max-width: 850px) {
+                font-size: $smPara;
+              }
+              @media screen and (min-width: 300px) and (max-width: 550px) {
+                font-size: 10px;
+              }
+            }
+            .icon {
+              font-size: $fontSize;
+              @media screen and (min-width: 300px) and (max-width: 550px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .right {
+          width: 20%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          position: absolute;
+          right: 30px;
+          cursor: pointer;
+          top: 20px;
+          .icon {
+            color: $greenColor;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}

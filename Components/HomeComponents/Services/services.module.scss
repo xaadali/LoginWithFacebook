@@ -1,0 +1,111 @@
+@import "../../../stylesConstants/colors.scss";
+.Container {
+  width: 100%;
+  margin-top: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  @media screen and (max-width: 600px) {
+    padding: 0rem !important;
+    margin-bottom: 2rem;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1800px;
+    .cardWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      column-gap: 2rem;
+      align-items: flex-start;
+      justify-content: space-between;
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        row-gap: 2rem;
+      }
+      .column {
+        width: 30%;
+        min-width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
+        .hoverContainer {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          row-gap: 1rem;
+          width: 100%;
+          cursor: pointer;
+
+          .heading {
+            color: #161616;
+            font-size: $fontSize;
+            font-weight: $fontWeight;
+            transition: 0.5s;
+            letter-spacing: 0.5px;
+            line-height: unset;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            @media screen and (max-width: 600px) {
+              font-size: 20px;
+            }
+          }
+          .hiddenContent {
+            transition: 0.7s;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // width: 300px;
+            color: #161616;
+            font-size: $paraFont;
+            line-height: 20px;
+            font-weight: $lightWeight;
+            text-align: center;
+            @media screen and (max-width: 600px) {
+              font-size: 15px;
+              line-height: 32px;
+            }
+            @media screen and (max-width: 900px) {
+              width: 100%;
+              opacity: 1;
+              justify-content: start;
+            }
+          }
+          &:hover {
+            .heading {
+              transform: translateY(-22px);
+              opacity: 1;
+            }
+            .hiddenContent {
+              transform: translateY(-20px);
+              opacity: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // width: 300px;
+              color: $bgPrimary;
+              font-size: $paraFont;
+              line-height: 20px;
+              font-weight: $lightWeight;
+              @media screen and (max-width: 900px) {
+                width: 100%;
+                justify-content: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

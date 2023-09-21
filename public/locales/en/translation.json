@@ -1,0 +1,122 @@
+{
+  "toastMessages": {
+    "favMechanic": "Mechanic has been marked as favourite.",
+    "login": "You have successfully logged in."
+  },
+  "homePage": {
+    "headerMainHeading": {
+      "your": "Your",
+      "mechanic": "Mechanic",
+      "oneStep": "One step Away"
+    },
+    "machines": {
+      "car": "Car",
+      "motorcycle": "Motorcycle",
+      "agriculture": "Agriculture",
+      "truck": "Truck",
+      "bus": "Bus",
+      "van": "Van",
+      "laundry": "Laundry"
+    },
+    "headerBottomHeading": {
+      "left": {
+        "heading": "WIDE RANGE",
+        "pera": "With 8 million parts from 46 Original Spare Parts (OEM) brands and growing range of OES brands we support over 1200 vehicle applications."
+      },
+      "center": {
+        "heading": "FAST & GLOBAL",
+        "pera": "Depending on stock, and with exceptions to some brands, we ship all orders within 24 to 48h anywhere in the world."
+      },
+      "right": {
+        "heading": "FULL SUPPORT",
+        "pera": "Our Specialist will make sure you get the right parts at the best price with guarantee of first-time fit."
+      }
+    },
+    "meetOur": {
+      "headingData": {
+        "heading": "Meet some of our",
+        "subHeading": "Certified Technicians"
+      },
+      "cardData": {
+        "cardOne": {
+          "heading": "Audi",
+          "subHeading": "Peter Champlin"
+        },
+        "cardTwo": {
+          "heading": "BMW",
+          "subHeading": "Michael Mckee"
+        },
+        "cardThree": {
+          "heading": "Chevrolet",
+          "subHeading": "Israel Trujano"
+        },
+        "cardFour": {
+          "heading": "Ford",
+          "subHeading": "Michael Mckee"
+        }
+      }
+    },
+    "repairServices": {
+      "headingText": {
+        "heading": "Get over 500 car repair services at",
+        "subHeading": "your home or office"
+      },
+      "cardData": {
+        "cardOne": {
+          "1": "Car is not starting Inspection",
+          "2": "Change Oil and Filter",
+          "3": "Brake Pads Replacement",
+          "4": "Timing Belt Replacement",
+          "5": "Pre-purchase Car Inspection",
+          "6": "Battery Replacement"
+        },
+        "cardTwo": {
+          "1": "Starter Replacement",
+          "2": "Alternator Replacement",
+          "3": "Serpentine/Drive Belt Replacement",
+          "4": "Spark Plugs Replacement",
+          "5": "Water Pump Replacement",
+          "6": "Fuel Pump Replacement"
+        },
+        "cardThree": {
+          "1": "Radiator Replacement",
+          "2": "Valve Cover Gasket Replacement",
+          "3": "Oxygen Sensor Replacement",
+          "4": "Thermostat Replacement",
+          "5": "Wheel Bearings Replacement",
+          "6": "Axle/CV Shaft Assembly Replacement"
+        }
+      }
+    },
+    "services": {
+      "headingText": {
+        "heading": "We service most",
+        "subHeading": "makes and models"
+      },
+      "cars": {
+        "1": "BMW",
+        "2": "TOYOTA",
+        "3": "HONDA",
+        "4": "Ford",
+        "5": "Chevrolet",
+        "6": "Nissan",
+        "7": "Dodge",
+        "8": "Volkswagen",
+        "9": "Mercedes",
+        "10": "Jeep",
+        "11": "Acura",
+        "12": "Hyundai"
+      }
+    },
+    "areYouProfessional": {
+      "heading": "Are you a professional? We help you improve your results",
+      "pera": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "buttonText": " Pricing Plans"
+    }
+  },
+
+  "locationText": "Add Location...",
+  "radiusText": "No Radius",
+  "selectText": "Select",
+  "lookFor": "Look For"
+}

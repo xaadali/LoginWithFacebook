@@ -1,0 +1,222 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  h1 {
+    width: 100%;
+    display: none;
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    color: #1b2734;
+    margin: 0;
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+  .wrapper {
+    width: 100%;
+    // padding: 1rem 0;
+    box-sizing: border-box;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .QuestionBox {
+      width: 70%;
+      height: auto;
+      border: 1px solid transparent;
+      // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 2rem;
+      box-sizing: border-box;
+      @media screen and (max-width: 1400px) {
+        width: 100%;
+        padding: 1rem 0rem;
+      }
+      @media screen and (min-width: 1020px) {
+        border: 1px solid #dcdfe3;
+      }
+      .cardWrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 600px) and (max-width: 1040px) {
+          justify-content: center;
+        }
+
+        .card {
+          width: 90%;
+          max-width: 100%;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 2.5rem;
+          border: 1px solid #dcdfe3;
+          @media screen and (max-width: 1024px) {
+            padding: 1.5rem 1rem;
+          }
+          @media screen and (min-width: 1024px) {
+            border: 1px solid transparent;
+          }
+
+          @media screen and (max-width: 700px) {
+            flex-direction: column;
+          }
+          .questinWrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 1rem;
+
+            .question {
+              color: $blackColor;
+              font-size: $smHeadingSIze;
+              font-weight: $fontWeight;
+            }
+            .text {
+              .border {
+                position: absolute;
+                height: 20px;
+                top: 25px;
+                left: -15px;
+                width: 50px;
+                rotate: 45deg;
+                z-index: -1;
+                background-color: white;
+                border: 1px solid #edeff2;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+              }
+              color: $blackColor;
+              font-size: $paraFont;
+              background: #ffffff;
+              border: 1px solid #edeff2;
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+              border-radius: 4px;
+              padding: 2rem 1.5rem;
+              position: relative;
+            }
+          }
+          .answerWrapper {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 1rem;
+            .question {
+              color: $blackColor;
+              font-size: $smHeadingSIze;
+              font-weight: $fontWeight;
+            }
+            .text {
+              color: $blackColor;
+              font-size: $paraFont;
+              background: #ffffff;
+              // border: 1px solid #edeff2;
+              // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+              // border-radius: 4px;
+              // padding: 2rem 1.5rem;
+              // position: relative;
+            }
+            form {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              row-gap: 1rem;
+              .inputWrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                row-gap: 0.5rem;
+                .errorStyle {
+                  color: $errorColor;
+                  font-size: 13px;
+                }
+                .inputStyle {
+                  background: $whiteColor;
+                  border: 1px solid $bgSec;
+                  border-radius: 0.4rem;
+                  height: 40px;
+                  padding: 0.1rem 1rem;
+                  width: 100%;
+                  box-sizing: border-box;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  column-gap: 0.5rem;
+                  @media screen and (max-width: 1024px) {
+                    height: 40px;
+                  }
+
+                  input {
+                    height: 100%;
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    color: $blackColor;
+                    &::placeholder {
+                      color: #98a1ab;
+                      font-size: $paraFont;
+                      @media screen and (max-width: 600px) {
+                        font-size: $smPara;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .btnWrapper {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                button {
+                  background-color: $primary;
+                  width: 80px;
+                  padding: 0.6rem 0rem;
+                  box-sizing: border-box;
+                  text-align: center;
+                  color: $whiteColor;
+                  transition: 0.4s;
+                  font-weight: $fontWeight;
+                  font-size: $fontSize;
+                  border: none;
+                  border-radius: $borderRadius;
+                  cursor: pointer;
+                  outline: none;
+                  font-family: "Roboto";
+                  @media screen and (min-width: 600px) and (max-width: 1024px) {
+                    font-size: 14px;
+                  }
+                  @media screen and (max-width: 600px) {
+                    padding: 0.6rem 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

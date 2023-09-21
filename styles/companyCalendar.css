@@ -1,0 +1,92 @@
+/***calender***/
+.rbc-toolbar {
+  position: relative !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+.rbc-today {
+  background-color: transparent !important;
+}
+.rbc-toolbar span:last-child {
+  display: none !important;
+}
+.rbc-toolbar span button:first-child {
+  display: none !important;
+}
+
+.rbc-toolbar .rbc-btn-group {
+  display: flex !important;
+  justify-content: space-between !important;
+  column-gap: 7rem !important;
+}
+
+.rbc-toolbar .rbc-btn-group button:nth-child(2) {
+  display: flex !important;
+  column-gap: 6rem !important;
+  background-image: url("./public/icons/left.svg") !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: transparent !important;
+  background-position: 50% 50% !important;
+  cursor: pointer !important;
+}
+
+.rbc-toolbar .rbc-btn-group button:nth-child(3) {
+  display: flex !important;
+  column-gap: 6rem !important;
+  background-image: url("./public/icons/right.svg") !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
+  border: none !important;
+  text-align: center !important;
+  color: transparent !important;
+  background-position: 50% 50% !important;
+  cursor: pointer !important;
+}
+.rbc-background-event {
+  background-color: #eef4fd !important;
+}
+
+.rbc-toolbar .rbc-btn-group button:active {
+  opacity: 0 !important;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  position: absolute !important;
+  left: 55px !important;
+  top: 6px !important;
+}
+.rbc-month-header .rbc-header {
+  border: none !important;
+  padding: 0.5rem 3px !important;
+}
+.rbc-month-view {
+  border: none !important;
+}
+
+.rbc-header {
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+  line-height: 15px !important;
+  text-align: center !important;
+  color: #717579 !important;
+}
+.rbc-row-segment {
+  margin-top: 10px !important;
+}
+.rbc-event {
+  background-color: #eef4fd !important ;
+  color: black !important;
+  padding: 20px 5px !important;
+  border-radius: 21px !important;
+  text-align: center !important;
+  width: 100% !important;
+  height: auto !important;
+}
+.rbc-row-segment .rbc-event-content {
+  font-size: 12px !important;
+}
+/***calender***/

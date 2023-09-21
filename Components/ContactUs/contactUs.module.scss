@@ -1,0 +1,266 @@
+@import "../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-top: 6rem;
+
+  // height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    padding: 0rem !important;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    box-sizing: border-box;
+    max-width: 1800px;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1rem;
+      box-sizing: border-box;
+      row-gap: 1.5rem;
+    }
+    @media screen and (min-width: 601px) {
+      width: 60%;
+    }
+    .header {
+      width: 100% !important;
+      font-size: 20px;
+      font-weight: $fontWeight;
+      color: #1b2734;
+      text-align: start;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      line-height: 35px;
+
+      @media screen and (max-width: 600px) {
+        display: block !important;
+      }
+      @media screen and (min-width: 601px) {
+        display: none !important;
+      }
+    }
+    .contactForm {
+      width: 50%;
+      background-color: transparent;
+      border-radius: 3px;
+      border: 1px solid #dcdfe3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 601px) {
+        width: 85%;
+      }
+      .formContent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        @media screen and (max-width: 600px) {
+          padding: 0.7rem;
+        }
+        .heading {
+          font-size: $smHeadingSIze;
+          font-weight: $fontWeight;
+          color: #1b2734;
+          text-align: start;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          @media screen and (min-width: 600px) {
+            display: block;
+          }
+          @media screen and (max-width: 599px) {
+            display: none;
+          }
+        }
+
+        .inputWrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+          .label {
+            font-size: 12px;
+            color: #1b2734;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 1px;
+            @media screen and (max-width: 600px) {
+              display: block;
+            }
+            @media screen and (min-width: 601px) {
+              display: none;
+            }
+          }
+          .errorStyle {
+            color: $errorColor;
+            font-size: 13px;
+          }
+          .inputStyle {
+            background: transparent;
+            border: 1px solid $bgSec;
+            border-radius: $borderRadius;
+            height: 35px;
+        
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.5rem;
+            @media screen and (max-width: 1024px) {
+              height: 40px;
+            }
+            input {
+              height: 100%;
+              width: 100%;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: $blackColor;
+              padding: 0.1rem 1rem;
+              &::placeholder {
+                color: #98a1ab;
+                font-size: $fontSize;
+                @media screen and (max-width: 600px) {
+                  font-size: $smPara;
+                }
+              }
+            }
+          }
+          .textAreaStyle {
+            background: transparent;
+            border: 1px solid $bgSec;
+            border-radius: $borderRadius;
+            padding: 1rem 1rem;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.5rem;
+            @media screen and (max-width: 600px) {
+              height: 230px !important;
+            }
+            @media screen and (min-width: 601px) {
+              height: 250px !important;
+            }
+
+            textarea {
+              height: 100%;
+              width: 100%;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: #98a1ab;
+
+              &::placeholder {
+                color: #98a1ab;
+                font-size: $fontSize;
+                @media screen and (max-width: 600px) {
+                  font-size: $smPara;
+                }
+              }
+            }
+          }
+          .checkboxStyle {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            column-gap: 40px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            // @media screen and (max-width: 600px) {
+            //   width: 80% !important;
+            // }
+            // @media screen and (max-width: 1024px) {
+            //   width: 100%;
+            // }
+            @media screen and (max-width: 950px) {
+              column-gap: 1px;
+            }
+            label {
+              color: #000000;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 22px;
+              cursor: pointer;
+              @media screen and (max-width: 950px) {
+                font-size: 11px !important;
+              }
+              span {
+                color: #3d83df;
+              }
+            }
+            input {
+              border-radius: 5px;
+              width: 20px;
+              height: 20px;
+              @media screen and (max-width: 600px) {
+                width: 20px;
+                height: 15px;
+              }
+            }
+          }
+        }
+
+        .btnWrapper {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-top: 1rem;
+          button {
+            background-color: $primary;
+            padding: 0.7rem 1.8rem;
+            box-sizing: border-box;
+            text-align: center;
+            color: $whiteColor;
+            transition: 0.4s;
+            max-width: 100%;
+            font-weight: $fontWeight;
+            font-size: $fontSize;
+            border: none;
+            border-radius: $borderRadius;
+            cursor: pointer;
+            outline: none;
+            font-family: "Roboto";
+            @media screen and (min-width: 600px) and (max-width: 1024px) {
+              font-size: 14px;
+            }
+            @media screen and (max-width: 600px) {
+              padding: 0.6rem 1rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

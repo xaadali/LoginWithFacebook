@@ -1,0 +1,121 @@
+{
+  "toastMessages": {
+    "favMechanic": "La mecánica ha sido marcada como favorita.",
+    "login": "Has accedido con éxito"
+  },
+  "homePage": {
+    "headerMainHeading": {
+      "your": "Tu",
+      "mechanic": "mecánica",
+      "oneStep": "a un paso de distancia"
+    },
+    "machines": {
+      "car": "Auto",
+      "motorcycle": "Motocicleta",
+      "agriculture": "Agricultura",
+      "truck": "Camión",
+      "bus": "Autobús",
+      "van": "camioneta",
+      "laundry": "Lavadero"
+    },
+    "headerBottomHeading": {
+      "left": {
+        "heading": "AMPLIA GAMA",
+        "pera": "Con 8 millones de piezas de 46 marcas de repuestos originales (OEM) y una gama cada vez mayor de marcas OES, respaldamos más de 1200 aplicaciones de vehículos."
+      },
+      "center": {
+        "heading": "RÁPIDA Y GLOBAL",
+        "pera": "Dependiendo de stock, y salvo algunas marcas, enviamos todos los pedidos en un plazo de 24 a 48h a cualquier parte del mundo."
+      },
+      "right": {
+        "heading": "APOYO TOTAL",
+        "pera": "Nuestro especialista se asegurará de que obtenga las piezas adecuadas al mejor precio con garantía de ajuste a la primera."
+      }
+    },
+    "meetOur": {
+      "headingData": {
+        "heading": "Conoce a algunas de nuestras",
+        "subHeading": "Técnicas certificadas"
+      },
+      "cardData": {
+        "cardOne": {
+          "heading": "Audi",
+          "subHeading": "Peter Champlín"
+        },
+        "cardTwo": {
+          "heading": "BMW",
+          "subHeading": "Michael Mc Kee"
+        },
+        "cardThree": {
+          "heading": "Chevrolet",
+          "subHeading": "Israel Trujano"
+        },
+        "cardFour": {
+          "heading": "Vado",
+          "subHeading": "Michael Mc Kee"
+        }
+      }
+    },
+    "repairServices": {
+      "headingText": {
+        "heading": "Obtenga más de 500 servicios de reparación de automóviles en",
+        "subHeading": "su hogar u oficina servicios en"
+      },
+      "cardData": {
+        "cardOne": {
+          "1": "El auto no arranca Inspección",
+          "2": "Cambiar aceite y filtro",
+          "3": "Reemplazo de pastillas de freno",
+          "4": "Reemplazo de la correa de distribución",
+          "5": "Inspección de automóvil previa a la compra",
+          "6": "Cambio de batería"
+        },
+        "cardTwo": {
+          "1": "Reemplazo del motor de arranque",
+          "2": "Reemplazo del alternador",
+          "3": "Reemplazo de la correa de transmisión/serpentina",
+          "4": "Reemplazo de bujías",
+          "5": "Reemplazo de la bomba de agua",
+          "6": "Reemplazo de la bomba de combustible"
+        },
+        "cardThree": {
+          "1": "Reemplazo del radiador",
+          "2": "Reemplazo de la junta de la tapa de la válvula",
+          "3": "Reemplazo del sensor de oxígeno",
+          "4": "Reemplazo del termostato",
+          "5": "Reemplazo de cojinetes de rueda",
+          "6": "Reemplazo del conjunto de eje/eje CV"
+        }
+      }
+    },
+    "services": {
+      "headingText": {
+        "heading": "Nosotras servimos mas",
+        "subHeading": "marcas y modelos"
+      },
+      "cars": {
+        "1": "BMW",
+        "2": "TOYOTA",
+        "3": "HONDA",
+        "4": "Vado",
+        "5": "Chevrolet",
+        "6": "Nissan",
+        "7": "Esquivar",
+        "8": "Volkswagen",
+        "9": "Mercedes",
+        "10": "todoterreno",
+        "11": "Acura",
+        "12": "Hyundai"
+      }
+    },
+    "areYouProfessional": {
+      "heading": "¿Eres un profesional? Te ayudamos a mejorar tus resultados",
+      "pera": "Es un hecho establecido desde hace mucho tiempo que un lector se distraerá con el contenido legible de una página cuando mire su diseño. El objetivo de usar Lorem Ipsum es que tiene una distribución más o menos normal de letras, en lugar de usar Contenido aquí, contenido aquí, lo que hace que parezca un inglés legible. Muchos paquetes de autoedición y editores de páginas web ahora utilizan Lorem Ipsum como texto modelo predeterminado, y una búsqueda de lorem ipsum revelará muchos sitios web que aún están en su infancia. Varias versiones han evolucionado a lo largo de los años, a veces por accidente, a veces a propósito (humor inyectado y cosas por el estilo).",
+      "buttonText": "Planes de precios"
+    }
+  },
+  "locationText": "Agregar Direccion...",
+  "radiusText": "Sin radio",
+  "selectText": "Seleccionar",
+  "lookFor": "Buscar"
+}

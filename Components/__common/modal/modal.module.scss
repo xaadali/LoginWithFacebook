@@ -1,0 +1,139 @@
+@import "../../../stylesConstants/colors.scss";
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  background: #0000001a;
+  opacity: 0;
+  animation: showModal 0.4s ease forwards;
+  // z-index: 10000000000000000;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+}
+
+.modal2 {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  background: #0000001a;
+  opacity: 0;
+  animation: showModal2 0.4s ease forwards;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showModal2 {
+  0% {
+    transform: scale(0) rotate(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+.outer {
+  position: relative;
+  width: 50%;
+  max-width: 341px;
+  margin: auto;
+  // z-index: 100000000000000000;
+  z-index: 2;
+  border-radius: 0px !important;
+  // background: $bgColor;
+  box-shadow: 0px 34px 33px rgba(22, 28, 45, 0.329);
+  border-radius: 15px !important;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.outer2 {
+  position: relative;
+  width: 30%;
+  max-width: 50%;
+  margin: auto;
+  z-index: 2;
+  border-radius: 15px;
+  background: transparent;
+  border: 1.5px solid transparent;
+  box-shadow: 0px 34px 33px rgba(22, 28, 45, 0.329);
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    max-width: 100%;
+  }
+}
+
+.close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  background-image: url("/icons/cancelIcon.svg");
+  background-color: $whiteColor;
+  background-position: center;
+  background-size: 20px !important;
+  background-repeat: no-repeat;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 100000;
+
+  // &:hover {
+  //   background-color: $primaryHover !important;
+  //   background: url("/icons/close.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: 15px !important;
+  // }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1400px) {
+  .outer {
+    max-width: 1000px;
+    border-radius: 0px !important;
+  }
+
+  .close {
+    top: -15px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .outer {
+    max-width: 1000px;
+  }
+
+  .close {
+    top: -10px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+    // background-size: 30px;
+  }
+}

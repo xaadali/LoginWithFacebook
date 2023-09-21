@@ -1,0 +1,42 @@
+export const DateData = [
+  {
+    id: 1,
+    time: "7 AM",
+    name: "Cristian",
+    contact: "Contact: +31 3652 145",
+    alert: "",
+    condition: "On",
+  },
+  {
+    id: 2,
+    time: "8 AM",
+    name: "Cristian",
+    contact: "Contact: +31 3652 145",
+    alert: "Slot time is blocked due to emergency.",
+    condition: "Off",
+  },
+  {
+    id: 3,
+    time: "9 AM",
+    name: "Cristian",
+    contact: "Contact: +31 3652 145",
+    alert: "",
+    condition: "On",
+  },
+  {
+    id: 4,
+    time: "10 AM",
+    name: "Cristian",
+    contact: "Contact: +31 3652 145",
+    alert: "Slot time is blocked due to emergency.",
+    condition: "Off",
+  },
+  {
+    id: 5,
+    time: "11 AM",
+    name: "Cristian",
+    contact: "Contact: +31 3652 145",
+    alert: "Slot time is blocked due to emergency.",
+    condition: "Off",
+  },
+];

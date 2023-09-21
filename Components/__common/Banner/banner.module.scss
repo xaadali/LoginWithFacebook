@@ -1,0 +1,71 @@
+@import "../../../stylesConstants/colors.scss";
+
+.header {
+  background: rgba(223, 61, 61, 0.1);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .leftSide {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    .heading {
+      font-size: 30px;
+      font-weight: $fontWeight;
+      color: rgba(223, 61, 61, 1);
+      span {
+        color: rgba(223, 61, 61, 1);
+      }
+    }
+    .date {
+      font-size: $fontSize;
+      font-weight: $fontWeight;
+      color: rgba(223, 61, 61, 1);
+      line-height: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    background: rgba(223, 61, 61, 0.1);
+    border-radius: 12px;
+    padding: 2rem 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    .leftSide {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      .heading {
+        font-size: 20px;
+        font-weight: $fontWeight;
+        color: rgba(223, 61, 61, 1);
+        text-align: left;
+        span {
+          color: rgba(223, 61, 61, 1);
+        }
+      }
+      .date {
+        font-size: $fontSize;
+        font-weight: $fontWeight;
+        color: rgba(223, 61, 61, 1);
+        line-height: 25px;
+      }
+    }
+  }
+}

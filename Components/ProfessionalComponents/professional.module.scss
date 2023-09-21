@@ -1,0 +1,337 @@
+@import "../../stylesConstants/colors.scss";
+.Container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+    }
+    .mobileViewHeading {
+      width: 100%;
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+      .MobileLeftSideHeading {
+        font-size: 3.1rem;
+        font-weight: $fontWeight;
+        color: $blackColor;
+        text-align: left;
+        text-transform: capitalize;
+        // line-height: 40px;
+        max-width: 650px;
+        @media screen and (max-width: 600px) {
+          font-size: 1.4rem;
+          text-align: left;
+          line-height: 2rem;
+          font-weight: bold;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1450px) {
+          display: none;
+        }
+      }
+      .Mobilepara {
+        color: $blackColor;
+        font-size: 1rem;
+        font-weight: $lightWeight;
+        text-align: justify;
+        line-height: 25px;
+        max-width: 700px;
+        @media screen and (min-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+    .leftSide {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      order: 1;
+      @media screen and (max-width: 1050px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+      }
+      .leftSideHeading {
+        font-size: 50px;
+        font-weight: $fontWeight;
+        color: #000000;
+        text-align: left;
+        text-transform: capitalize;
+        // line-height: 40px;
+        max-width: 650px;
+        @media screen and (max-width: 600px) {
+          font-size: 1.4rem;
+          text-align: left;
+          line-height: 2rem;
+          font-weight: bold;
+        }
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1450px) {
+          font-size: 2.1rem;
+          text-align: left;
+        }
+      }
+      .para {
+        color: #000000;
+        font-size: 18px;
+        font-weight: $lightWeight;
+        text-align: left;
+        line-height: 30px;
+        max-width: 700px;
+        @media screen and (max-width: 600px) {
+          text-align: justify;
+        }
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+      .servicesWrapper {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+        row-gap: 2rem;
+        margin-top: 4rem;
+        @media screen and (min-width: 250px) and (max-width: 500px) {
+          flex-direction: column;
+          row-gap: 2rem;
+        }
+        .card {
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+          justify-content: flex-start;
+          align-items: flex-start;
+          @media screen and (min-width: 250px) and (max-width: 500px) {
+            width: 100%;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+          img {
+            width: 20%;
+            @media screen and (max-width: 1024px) {
+              width: 20%;
+            }
+          }
+          .heading {
+            font-size: $smHeadingSIze;
+            color: #000000;
+            line-height: 30px;
+            font-weight: $fontWeight;
+          }
+          .description {
+            @media screen and (min-width: 1024px) {
+              max-width: 250px;
+            }
+            font-size: $paraFont;
+            color: #000000;
+            line-height: 30px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+    .formWrapper {
+      width: 45%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      order: 2;
+      @media screen and (max-width: 1050px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+      }
+      .profileForm {
+        border: 1px solid #dcdfe3;
+        border-radius: $borderRadius;
+        width: 100%;
+        padding: 2rem 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .formContent {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          row-gap: 1.5rem;
+          .heading {
+            font-size: $headingSize;
+            font-weight: $fontWeight;
+            color: $blackColor;
+            text-align: start;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            @media screen and (max-width: 700px) {
+              font-size: 0.9rem;
+            }
+            @media screen and (min-width: 1024px) and (max-width: 1450px) {
+              font-size: $mediumHeading;
+              text-align: left;
+            }
+          }
+          .errorStyle {
+            color: red;
+            font-size: 13px;
+          }
+          .inputWrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.5rem;
+            label {
+              font-size: $fontSize;
+              font-weight: $fontWeight;
+              line-height: 22px;
+              color: #1b2734;
+              @media screen and (max-width: 500px) {
+                font-size: $smPara;
+              }
+            }
+            .errorStyle {
+              color: red;
+              font-size: 13px;
+            }
+            .inputStyle {
+              background: transparent;
+              border: 1px solid $bgSec;
+              border-radius: $borderRadius;
+              height: 40px;
+              padding: 0.1rem 1rem;
+              width: 100%;
+              box-sizing: border-box;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              column-gap: 0.5rem;
+              @media screen and (max-width: 1024px) {
+                height: 40px;
+              }
+
+              input {
+                height: 100%;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: $blackColor;
+                &::placeholder {
+                  color: #98a1ab;
+                  font-size: $fontSize;
+                  @media screen and (max-width: 600px) {
+                    font-size: $smPara;
+                  }
+                }
+              }
+              .pIcon {
+                color: #9a9ea0;
+                font-size: 18px;
+                cursor: pointer;
+                @media screen and (max-width: 1024px) {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          label {
+            font-size: $fontSize;
+            font-weight: $fontWeight;
+            line-height: 22px;
+            color: #1b2734;
+
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            @media screen and (max-width: 500px) {
+              font-size: $smPara;
+            }
+          }
+          .radioWrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            column-gap: 2rem;
+            align-items: center;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            .workShopSide {
+              font-weight: 600;
+              color: #1b2734;
+            }
+          }
+          .btnWrapper {
+            width: 100%;
+            button {
+              background-color: $primary;
+              width: 100%;
+              padding: 0.8rem 2rem;
+              box-sizing: border-box;
+              text-align: center;
+              color: $whiteColor;
+              transition: 0.4s;
+              max-width: 100%;
+              font-weight: $fontWeight;
+              font-size: $fontSize;
+              border: none;
+              border-radius: $borderRadius;
+              font-family: "Roboto";
+              cursor: pointer;
+              outline: none;
+              @media screen and (min-width: 600px) and (max-width: 1024px) {
+                font-size: 14px;
+              }
+              @media screen and (max-width: 600px) {
+                padding: 0.6rem 1rem;
+              }
+            }
+          }
+          .termsCheck {
+            width: 100%;
+            display: flex;
+            column-gap: 0.3rem;
+            .checkTerm {
+              width: 5%;
+              min-width: 30px;
+              cursor: pointer;
+              input {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+              }
+            }
+            .termsText {
+              width: 80%;
+              cursor: pointer;
+              font-size: 15px;
+              word-spacing: 0.1rem;
+              line-height: 22px;
+              color: #1b2734;
+              span {
+                color: #1662c6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

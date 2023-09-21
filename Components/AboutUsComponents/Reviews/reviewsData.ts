@@ -1,0 +1,66 @@
+const ReviewsData = [
+  {
+    id: 1,
+    des: "It was so easy working with you! I appreciated the speed and attention to detail with the assets I needed. Especially, on short notice. The work went smoothly and I feel taken care.",
+    name: "Max Kabanuk",
+    subtitle: "Evolving Sanctuary",
+    img: "./team/img.svg",
+  },
+  {
+    id: 2,
+    des: "I m very grateful to have learned so much about design and it's impact on businesses. I'm looking forward to building the Huneebee Project brand with your expertise by my side.",
+    name: "Sarah Taylor",
+    subtitle: "Huneebee Project",
+    img: "./team/img2.svg",
+  },
+  {
+    id: 3,
+    des: "We were happy and impressed by the website! We love how it looks and how it's worked for the business! Zahr made sure to understand our needs and then execute what we needed.",
+    name: "Ben Chaffee",
+    subtitle: "EngineeredFitness",
+    img: "./team/img3.svg",
+  },
+  {
+    id: 4,
+    des: "It was so easy working with you! I appreciated the speed and attention to detail with the assets I needed. Especially, on short notice. The work went smoothly and I feel taken care.",
+    name: "Max Kabanuk",
+    subtitle: "Evolving Sanctuary",
+    img: "./team/img.svg",
+  },
+  {
+    id: 5,
+    des: "I m very grateful to have learned so much about design and it's impact on businesses. I'm looking forward to building the Huneebee Project brand with your expertise by my side.",
+    name: "Sarah Taylor",
+    subtitle: "Huneebee Project",
+    img: "./team/img2.svg",
+  },
+  {
+    id: 6,
+    des: "We were happy and impressed by the website! We love how it looks and how it's worked for the business! Zahr made sure to understand our needs and then execute what we needed.",
+    name: "Ben Chaffee",
+    subtitle: "EngineeredFitness",
+    img: "./team/img3.svg",
+  },
+  {
+    id: 7,
+    des: "It was so easy working with you! I appreciated the speed and attention to detail with the assets I needed. Especially, on short notice. The work went smoothly and I feel taken care.",
+    name: "Max Kabanuk",
+    subtitle: "Evolving Sanctuary",
+    img: "./team/img.svg",
+  },
+  {
+    id: 8,
+    des: "I m very grateful to have learned so much about design and it's impact on businesses. I'm looking forward to building the Huneebee Project brand with your expertise by my side.",
+    name: "Sarah Taylor",
+    subtitle: "Huneebee Project",
+    img: "./team/img2.svg",
+  },
+  {
+    id: 9,
+    des: "We were happy and impressed by the website! We love how it looks and how it's worked for the business! Zahr made sure to understand our needs and then execute what we needed.",
+    name: "Ben Chaffee",
+    subtitle: "EngineeredFitness",
+    img: "./team/img3.svg",
+  },
+];
+export default ReviewsData;

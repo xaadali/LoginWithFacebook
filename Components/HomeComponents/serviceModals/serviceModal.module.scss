@@ -1,0 +1,117 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  @media screen and (max-width: 600px) {
+    padding: 0rem !important;
+    margin-bottom: 2rem;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    max-width: 1800px;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      padding: 1rem 0;
+    }
+    label {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 45px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #333333;
+      @media screen and (max-width: 600px) {
+        font-size: 24px !important;
+        line-height: 39px !important;
+      }
+
+      br {
+        display: none;
+        @media screen and (max-width: 1024px) {
+          display: block;
+        }
+      }
+      span {
+        color: #3d83df;
+      }
+    }
+    .cardWrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 2.5rem;
+      row-gap: 2.5rem;
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        min-width: 160px;
+        overflow: auto;
+        padding: 1rem;
+
+        max-width: 300px;
+        width: 200px;
+        @media screen and (min-width: 375px) and (max-width: 475px) {
+          min-width: 100px !important;
+          overflow: unset;
+          max-width: 300px !important;
+          width: 100px !important;
+        }
+        @media screen and (min-width: 476px) and (max-width: 600px) {
+          min-width: 100px !important;
+          overflow: unset;
+          max-width: 300px !important;
+          width: 120px !important;
+        }
+
+        .headerImg {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 120px;
+          .icon {
+            // width: 60%;
+            // height: 60%;
+          }
+        }
+
+        .btn {
+          font-size: 16px;
+          border: 1px solid $blueBorder;
+          padding: 0.5rem 1rem;
+          width: 150px;
+          border: 1px solid #d8d8d8;
+          border-radius: 40px;
+          display: flex;
+          justify-content: center;
+          color: #4a5155;
+          &:hover {
+            border: 1px solid $primary;
+            color: $primary;
+            font-weight: $fontWeight;
+          }
+          @media screen and (min-width: 300px) and (max-width: 475px) {
+            padding: 0.5rem 1rem;
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}

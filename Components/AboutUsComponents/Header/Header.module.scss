@@ -1,0 +1,85 @@
+@import "../../../stylesConstants/colors.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10rem;
+  padding-top: 7rem;
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7rem 0 0 0;
+  }
+  .wrapper {
+    max-width: 1800px;
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 1rem;
+    padding: 6rem;
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+      width: 100%;
+      padding: 3rem;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 768px) {
+      flex-direction: column;
+      padding: 0;
+      width: 100%;
+    }
+    .headingWrapper {
+      width: 35%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @media screen and (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+      }
+      .heading {
+        font-size: $headingSize;
+        font-weight: $fontWeight;
+        color: $blackColor;
+        @media screen and (min-width: 300px) and (max-width: 768px) {
+          font-size: 30px;
+        }
+      }
+    }
+    .textWrapper {
+      width: 70%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      @media screen and (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+      }
+      .para {
+        font-size: $paraFont;
+        color: $blackColor;
+        font-weight: $lightWeight;
+        line-height: 25px;
+        @media screen and (min-width: 300px) and (max-width: 768px) {
+          text-align: justify;
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+      .label {
+        font-size: $paraFont;
+        color: $blackColor;
+        font-weight: $lightWeight;
+        @media screen and (min-width: 300px) and (max-width: 768px) {
+          text-align: justify;
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

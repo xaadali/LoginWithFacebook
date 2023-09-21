@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 0rem;
+  display: block;
+  z-index: 10000000;
+  display: flex;
+  justify-content: flex-end;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    z-index: 1000;
+    .notification {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      .notificationbadge {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #ff3e3e;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .bellmessage {
+      position: absolute;
+      overflow-y: auto;
+      max-height: 20rem;
+      right: -9%;
+      top: 90%;
+      width: 18.3rem;
+      border-radius: 5px;
+      background-color: #21263b;
+      border: 1px solid #263c58;
+      @media screen and (max-width: "600px") {
+        right: -27%;
+      }
+      .heading {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background-color: #2c324d;
+        span {
+          font-size: 0.8rem;
+        }
+        position: sticky;
+        top: 0;
+      }
+      .card {
+        width: 100%;
+        padding: 0.3rem 1rem;
+        display: flex;
+        cursor: pointer;
+        min-height: 4rem;
+        .right {
+          width: 100%;
+          padding-bottom: 0.3rem;
+          border-bottom: 1px solid rgba(80, 80, 80, 0.363);
+          .notificationMessage {
+            font-size: 0.7rem;
+            font-weight: normal;
+            white-space: pre-wrap;
+            word-break: normal;
+            letter-spacing: 0.07em;
+            line-height: 22px;
+            color: rgba(255, 255, 255, 0.774);
+            span {
+              color: #00aeef;
+            }
+          }
+          h6 {
+            font-size: 0.7rem;
+          }
+          label {
+            font-size: 0.7rem;
+            display: block;
+            color: rgba(255, 255, 255, 0.315);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 30px;
+    height: 30px;
+    padding: 0px 1rem;
+    display: block;
+    .wrapper {
+      .bellmessage {
+        right: 0%;
+      }
+    }
+  }
+}

@@ -1,0 +1,243 @@
+@import "../../../../../stylesConstants/colors.scss";
+.Wrapper {
+  width: 100%;
+  border-left: 1px solid #e6e6e6;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .paymentCycle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+    .header {
+      width: 100%;
+      display: flex;
+      row-gap: 10px;
+      flex-direction: column;
+      h1 {
+        font-size: 15px;
+        line-height: 24px;
+        margin: 0;
+        display: block;
+      }
+      p {
+        font-size: 13px;
+        line-height: 24px;
+        margin: 0;
+        font-weight: 400;
+      }
+      .radioButtonsWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        @media screen and (min-width: 508px) {
+          max-width: 500px;
+        }
+        .creditCard {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          column-gap: 1rem;
+          align-items: flex-start;
+          padding-bottom: 0.5rem;
+          .cal {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            // height: 35px;
+            // max-height: 35px;
+            p {
+              padding: 2px 7.66px 2px 8px;
+              align-items: flex-end;
+              border-radius: 4px;
+              background: #cff7d3;
+              color: #009951;
+              font-family: Roboto;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 16px;
+              letter-spacing: 0.005px;
+            }
+          }
+          .cals {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            // height: 35px;
+            // max-height: 35px;
+            p {
+              padding: 2px 7.66px 2px 8px;
+              align-items: flex-end;
+              border-radius: 4px;
+              background: #cff7d3;
+              color: #009951;
+              font-family: Roboto;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 16px;
+              letter-spacing: 0.005px;
+            }
+          }
+          .checkbox {
+            display: flex;
+            flex-direction: row;
+            column-gap: 1rem;
+            align-items: flex-start;
+            height: 20px;
+            input {
+              height: 15px;
+              width: 15px;
+              border: 1px solid black !important;
+              background-color: black !important;
+              border-radius: 50%;
+              cursor: pointer;
+              align-items: flex-start;
+              display: flex;
+              justify-content: flex-start;
+              margin-left: 0;
+              div {
+                width: 17px;
+                height: 17px;
+                background-color: black;
+                border-radius: 50%;
+                border: 1px solid black;
+              }
+            }
+            .text {
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .amount {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(230, 230, 230, 1);
+        height: 50px;
+        .plans {
+          h1 {
+            font-size: 14px;
+            line-height: 22.5px;
+            color: #3d83df;
+          }
+        }
+        .cal {
+          display: flex;
+          flex-direction: column;
+          span {
+            color: rgba(0, 0, 0, 0.3);
+            font-family: Roboto;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration: line-through;
+            padding-right: 2px;
+          }
+          p {
+            color: #000000;
+            font-family: Roboto;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+          .off {
+            padding: 2px 7.66px 2px 8px;
+            align-items: center;
+            text-align: center;
+            border-radius: 4px;
+            background: #cff7d3;
+            color: #009951;
+            font-family: Roboto;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0.005px;
+          }
+        }
+      }
+    }
+    .card {
+      width: 100%;
+      .details {
+        width: 100%;
+        box-sizing: border-box;
+        row-gap: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        .textWrapper {
+          display: flex;
+          flex-direction: row;
+          column-gap: 0.6rem;
+          align-items: center;
+          color: #000;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 19.5px;
+          letter-spacing: 0.15px;
+          .imgWrapper {
+            font-size: 13px;
+            color: $primary;
+            font-weight: $lightWeight;
+          }
+        }
+      }
+      .btnWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem 0rem 1rem 0rem;
+        box-sizing: border-box;
+        .btn {
+          width: 100%;
+          color: $whiteColor;
+          background-color: $primary;
+          padding: 0.7rem 0.8rem;
+          border-radius: 6px;
+          font-size: $fontSize;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          .icon {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .subTotal {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5rem;
+      border-top: 1px solid #e6e6e6;
+      p {
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.settings {
+  @apply flex py-8 w-full px-4;
+}
+.signin {
+  @apply flex py-12 px-4 w-full  shadow-innerShadow;
+}
+.forgot {
+  @apply flex justify-center py-12 px-4 w-full  shadow-innerShadow;
+}

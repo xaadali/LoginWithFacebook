@@ -1,0 +1,362 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // margin-top: 2rem;
+  flex-direction: column;
+  h1 {
+    width: 100%;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    display: none;
+    align-items: center;
+    color: #1b2734;
+    @media screen and (max-width: 1024px) {
+      display: flex;
+    }
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 1800px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+    .cardWrapper {
+      width: 90%;
+      background: #ffffff;
+      border: 1px solid #dcdfe3;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      .topWrapper {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #edeff2;
+        .nameWrapper {
+          width: 23%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          border-right: 1px solid #edeff2;
+          row-gap: 0.7rem;
+          padding: 1rem 1rem;
+          box-sizing: border-box;
+          .name {
+            color: $blackColor;
+            font-size: $smHeadingSIze;
+            font-weight: $fontWeight;
+          }
+          .brandWrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 5px;
+            .brand {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              background: #f2f2f2;
+              color: #acacac;
+              font-size: $paraFont;
+              font-weight: $fontWeight;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .brandName {
+              font-size: $paraFont;
+              color: $blackColor;
+              font-weight: $fontWeight;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              column-gap: 0.5rem;
+              .ratingBox {
+                width: 10px;
+                height: 10px;
+                background-color: #00c3a5;
+                border-radius: 100%;
+              }
+            }
+          }
+        }
+        .detailWrapper {
+          width: 23%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.7rem;
+          justify-content: flex-start;
+          align-items: flex-start;
+          border-right: 1px solid #edeff2;
+          row-gap: 0.7rem;
+          padding: 1rem;
+          box-sizing: border-box;
+
+          .name {
+            font-size: $fontSize;
+            color: $blackColor;
+            font-weight: $fontWeight;
+          }
+          .brandName {
+            color: $blackColor;
+            font-weight: $lightWeight;
+            font-size: $paraFont;
+            word-break: break-all;
+          }
+        }
+        .statusWrapper {
+          width: 23%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          row-gap: 0.7rem;
+          padding: 1rem;
+          box-sizing: border-box;
+          .name {
+            font-size: $fontSize;
+            color: $blackColor;
+            font-weight: $fontWeight;
+          }
+          .status {
+            color: $greenColor;
+            font-weight: $lightWeight;
+            font-size: $paraFont;
+          }
+        }
+      }
+      .bottomWrapper {
+        display: flex;
+        justify-content: center;
+        // align-items: flex-start;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        width: 100%;
+        padding: 0;
+        .leftSide {
+          width: 50%;
+          border-right: 1px solid #edeff2;
+
+          .reviewsWrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.7rem;
+            padding: 1rem;
+            box-sizing: border-box;
+
+            .name {
+              font-size: $fontSize;
+              color: $blackColor;
+              font-weight: $fontWeight;
+            }
+            .brandName {
+              color: $blackColor;
+              font-weight: $lightWeight;
+              font-size: $paraFont;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              column-gap: 0.5rem;
+              .ratingBox {
+                width: 10px;
+                height: 10px;
+                background-color: #00c3a5;
+                border-radius: 100%;
+              }
+            }
+          }
+        }
+        .rightSide {
+          width: 50%;
+          .commentWrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.7rem;
+            padding: 1rem;
+            box-sizing: border-box;
+            .name {
+              font-size: $fontSize;
+              color: $blackColor;
+              font-weight: $fontWeight;
+            }
+            .brandName {
+              color: $blackColor;
+              font-weight: $lightWeight;
+              font-size: $paraFont;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobileWrapper {
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+    .mobileCardWrapper {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #dcdfe3;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      .nameWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-right: 1px solid #edeff2;
+        row-gap: 0.7rem;
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+        .name {
+          color: $blackColor;
+          font-size: $smHeadingSIze;
+          font-weight: $fontWeight;
+        }
+        .brandWrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 5px;
+          .brand {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: #f2f2f2;
+            color: #acacac;
+            font-size: $paraFont;
+            font-weight: $fontWeight;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .brandName {
+            font-size: $paraFont;
+            color: $blackColor;
+            font-weight: $fontWeight;
+          }
+        }
+      }
+      .mobileTopWrapper {
+        width: 100%;
+        border-top: 1px solid #dcdfe3;
+        .mobileLeftWrapper {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          .MobiledetailWrapper {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.7rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+            row-gap: 0.7rem;
+            padding: 1rem;
+            box-sizing: border-box;
+            .Mobilename {
+              font-size: 0.8rem;
+              color: $blackColor;
+              font-weight: 600;
+            }
+            .MobilebrandName {
+              color: $blackColor;
+              font-weight: $lightWeight;
+              font-size: $paraFont;
+            }
+            .MobilebrandNamestatus {
+              color: #627282;
+              font-weight: $lightWeight;
+              font-size: $paraFont;
+            }
+          }
+        }
+      }
+      .MobilebottomWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: flex-start;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        width: 100%;
+        padding: 0;
+        border-top: 1px solid #edeff2;
+        .MobileleftSide {
+          width: 100%;
+
+          .MobilereviewsWrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.7rem;
+            padding: 1rem;
+            box-sizing: border-box;
+
+            .Mobilename {
+              font-size: $fontSize;
+              color: $blackColor;
+              font-weight: $fontWeight;
+            }
+            .MobilebrandName {
+              color: $blackColor;
+              font-weight: $lightWeight;
+              font-size: $paraFont;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              column-gap: 0.5rem;
+              .ratingBox {
+                width: 10px;
+                height: 10px;
+                background-color: #00c3a5;
+                border-radius: 100%;
+              }
+            }
+          }
+        }
+        .MobilerightSide {
+          border-top: 1px solid #edeff2;
+          .MobilecommentWrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.7rem;
+            padding: 1rem;
+            box-sizing: border-box;
+            .Mobilename {
+              font-size: $fontSize;
+              color: $blackColor;
+              font-weight: $fontWeight;
+            }
+            .MobilebrandName {
+              color: $blackColor;
+              font-weight: $lightWeight;
+              font-size: $paraFont;
+            }
+          }
+        }
+      }
+    }
+  }
+}

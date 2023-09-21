@@ -1,0 +1,234 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  max-width: 1800px;
+  @media screen and (max-width: 768px) {
+    padding: 1rem !important;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+    .heading {
+      text-align: start;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      flex-direction: column;
+      row-gap: 2px;
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+      label {
+        font-size: $headingSize;
+        font-weight: $fontWeight;
+        color: $blackColor;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: $smHeadingSIze;
+      }
+      .content {
+        font-size: $paraFont;
+        color: $blackColor;
+      }
+    }
+    .loginForm {
+      width: 40%;
+      background: #ffffff;
+      border: 1px solid #dcdfe3;
+      border-radius: 4px;
+      padding: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 1100px) {
+        width: 85%;
+      }
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 1rem 0rem;
+      }
+      .formContent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        @media screen and (max-width: 500px) {
+          width: 90%;
+        }
+        .backArrow {
+          width: 100%;
+          color: #3d83df;
+          cursor: pointer;
+        }
+        .heading {
+          text-align: start;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          flex-direction: column;
+          row-gap: 2px;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+          label {
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: $fontWeight;
+            color: $blackColor;
+          }
+          @media screen and (max-width: 700px) {
+            font-size: $smHeadingSIze;
+          }
+          .content {
+            font-size: 15px;
+            line-height: 22px;
+            color: #627282;
+          }
+        }
+
+        .inputWrapper {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+
+          label {
+            font-size: 15px;
+            font-weight: $fontWeight;
+            line-height: 22px;
+            color: #1b2734;
+            mix-blend-mode: normal;
+            @media screen and (max-width: 500px) {
+              font-size: $smPara;
+            }
+          }
+          .errorStyle {
+            color: $errorColor;
+            font-size: 13px;
+          }
+          .inputStyle {
+            background: $whiteColor;
+            border: 1px solid $bgSec;
+            border-radius: $borderRadius;
+            height: 50px;
+            padding: 0.1rem 1rem;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.5rem;
+            @media screen and (max-width: 1024px) {
+              height: 40px;
+            }
+
+            input {
+              height: 100%;
+              width: 100%;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              color: $blackColor;
+              &::placeholder {
+                color: #495057;
+                font-size: $smPara;
+                @media screen and (max-width: 600px) {
+                  font-size: $smPara;
+                }
+              }
+            }
+            .pIcon {
+              color: #9a9ea0;
+              font-size: 18px;
+              cursor: pointer;
+              @media screen and (max-width: 1024px) {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+
+        .btnWrapper {
+          width: 100%;
+          button {
+            background-color: $primary;
+            width: 100%;
+            padding: 0.8rem 2rem;
+            box-sizing: border-box;
+            text-align: center;
+            color: $whiteColor;
+            transition: 0.4s;
+            max-width: 100%;
+            font-weight: $fontWeight;
+            font-size: 15px;
+            border: none;
+            border-radius: $borderRadius;
+
+            cursor: pointer;
+            outline: none;
+            @media screen and (min-width: 600px) and (max-width: 1024px) {
+              font-size: 14px;
+            }
+            @media screen and (max-width: 600px) {
+              padding: 0.6rem 1rem;
+            }
+          }
+        }
+
+        .devider {
+          width: 100%;
+          border-bottom: solid 1px $bgSec;
+          margin: 20px 0px;
+        }
+        .footerContent {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          font-size: $fontSize;
+          font-weight: $lightWeight;
+          color: #627282;
+          .forgot {
+            width: 100%;
+            text-align: center;
+            label {
+              font-size: $fontSize;
+              font-weight: $lightWeight;
+              line-height: 18px;
+              text-align: right;
+              color: $primary;
+              cursor: pointer;
+
+              @media screen and (max-width: 1024px) {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

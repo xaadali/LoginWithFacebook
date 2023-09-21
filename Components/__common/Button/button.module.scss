@@ -1,0 +1,61 @@
+@import "../../../stylesConstants/colors.scss";
+.btn {
+  background-color: $primary;
+  width: 100%;
+  // padding: 1rem;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  color: $whiteColor;
+  transition: 0.25s;
+  max-width: 155px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 7px;
+  font-family: "Roboto";
+  &:hover {
+    box-shadow: inset -100px 0 0 0 $whiteColor, inset 100px 0 0 0 $whiteColor;
+    color: $primary;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.outlineBtn {
+  background-color: transparent;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  transition: 0.25s;
+  border: 1px solid $blueBorder;
+  width: 142px;
+  cursor: pointer;
+  outline: none;
+  border-radius: $borderRadius;
+  font-family: "Roboto";
+  &:hover {
+    box-shadow: inset -71px 0 0 0 $primary, inset 71px 0 0 0 $primary;
+  }
+  &:focus {
+    box-shadow: inset 142px 0 0 0 $primary;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0.6rem 1rem;
+    width: 100% !important;
+  }
+}

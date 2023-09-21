@@ -1,0 +1,165 @@
+@import "../../../stylesConstants/colors.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+  .wrapper {
+    max-width: 1800px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (min-width: 300px) and (max-width: 1300px) {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+
+    .headingWrapper {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 769px) and (max-width: 1300px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+      @media screen and (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .heading {
+        font-size: $headingSize;
+        font-weight: $fontWeight;
+        color: $blackColor;
+        @media screen and (min-width: 300px) and (max-width: 768px) {
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+    .rightWrapper {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: row;
+      column-gap: 2.5rem;
+      @media screen and (min-width: 901px) and (max-width: 1300px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      @media screen and (min-width: 300px) and (max-width: 900px) {
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .sectionOne {
+        width: 39%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        @media screen and (min-width: 901px) and (max-width: 1300px) {
+          width: 50%;
+        }
+        @media screen and (min-width: 300px) and (max-width: 900px) {
+          width: 100%;
+          justify-content: flex-start;
+        }
+        .heading {
+          font-size: $smHeadingSIze;
+          color: $blackColor;
+          font-weight: $fontWeight;
+          @media screen and (min-width: 300px) and (max-width: 768px) {
+            font-size: 20px;
+            line-height: 32px;
+          }
+        }
+        .text {
+          font-size: $paraFont;
+          color: $blackColor;
+          font-weight: $lightWeight;
+          line-height: 25px;
+          @media screen and (min-width: 300px) and (max-width: 768px) {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+        .label {
+          color: #3c3e3f;
+          font-size: $paraFont;
+          font-weight: $lightWeight;
+        }
+      }
+      .sectionTwo {
+        width: 39%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        @media screen and (min-width: 901px) and (max-width: 1300px) {
+          width: 45%;
+        }
+        @media screen and (min-width: 300px) and (max-width: 900px) {
+          width: 100%;
+          justify-content: center;
+        }
+        img {
+          width: 100%;
+          max-width: 12cap;
+          height: 400px;
+          object-fit: cover;
+          border-radius: 16px;
+          @media screen and (min-width: 300px) and (max-width: 768px) {
+            height: 300px;
+          }
+          @media screen and (min-width: 973px) {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+          }
+          @media screen and (max-width: 973px) {
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+          }
+        }
+        .heading {
+          font-size: $smHeadingSIze;
+          color: $blackColor;
+          font-weight: $fontWeight;
+          @media screen and (min-width: 300px) and (max-width: 768px) {
+            font-size: 20px;
+            line-height: 32px;
+          }
+        }
+        .text {
+          font-size: $paraFont;
+          color: $blackColor;
+          font-weight: $lightWeight;
+          line-height: 25px;
+          @media screen and (min-width: 300px) and (max-width: 768px) {
+            font-size: 16px;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+}

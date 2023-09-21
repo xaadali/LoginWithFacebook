@@ -1,0 +1,541 @@
+@import "../../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  .wrapper {
+    width: 100%;
+    height: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    @media screen and (min-width: 300px) and (max-width: 1200px) {
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+    .cardWrapp {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      .card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #dcdfe3;
+        border-radius: 6px;
+        @media screen and (min-width: 300px) and (max-width: 1200px) {
+          flex-direction: column;
+          row-gap: 2rem;
+        }
+        .detailsWrapper {
+          @media screen and (min-width: 300px) and (max-width: 1200px) {
+            width: 100%;
+            border-right: none;
+          }
+          padding-top: 1.5rem;
+          width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          row-gap: 1rem;
+          border-right: 1px solid $dashBoardBackground;
+          @media screen and (max-width: 768px) {
+            padding-top: 0.7rem;
+          }
+          .profileData {
+            @media screen and (min-width: 300px) and (max-width: 1200px) {
+              width: 100%;
+              border-right: none;
+            }
+            padding: 1rem;
+            width: 94%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 1.5rem;
+            @media screen and (max-width: 768px) {
+              padding: 0.2rem;
+              width: 99%;
+            }
+            .header {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              column-gap: 1rem;
+              cursor: pointer;
+              @media screen and (min-width: 300px) and (max-width: 768px) {
+                flex-direction: row;
+                row-gap: 1rem;
+              }
+              @media screen and (min-width: 767px) {
+                padding: 0.2rem;
+                width: 95%;
+              }
+              a {
+                width: 100%;
+              }
+
+              .upperleftSide {
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                text-align: start;
+                column-gap: 1rem;
+                align-items: center;
+                cursor: pointer;
+
+                .logo {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #f2f2f2;
+                  height: 100px;
+                  width: 100px;
+                  border-radius: 8%;
+
+                  img {
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 8%;
+                  }
+                }
+                .detail {
+                  display: flex;
+                  justify-content: flex-start;
+                  flex-direction: column;
+                  row-gap: 0.4rem;
+
+                  .brandName {
+                    font-size: 16px;
+                    color: #1b2734;
+                    font-weight: $fontWeight;
+                    letter-spacing: 3px;
+                    // text-transform: uppercase;
+                    @media screen and (max-width: 600px) {
+                      font-size: $paraFont;
+                    }
+                  }
+                  .title {
+                    font-size: 15px;
+                    color: #1b2734;
+                    font-weight: $lightWeight;
+                    @media screen and (max-width: 600px) {
+                      font-size: $paraFont;
+                    }
+                  }
+                  .ratingWrapper {
+                    width: 100%;
+                    margin-top: 5px;
+                    font-size: 15px;
+                    color: $greenColor;
+                    align-items: center;
+                    display: flex;
+                    column-gap: 0.5rem;
+                    span {
+                      font-size: 14px;
+                      color: $grayColor;
+                      margin-left: 10px;
+                      @media screen and (max-width: 600px) {
+                        font-size: 10px;
+                      }
+                    }
+                    .ratingBoxs {
+                      width: 10px;
+                      height: 10px;
+                      background-color: #00c3a5;
+                      border-radius: 100%;
+                    }
+                  }
+                }
+              }
+
+              .rightSide {
+                width: 20%;
+                justify-content: flex-end;
+                display: flex;
+                color: #00c3a5;
+                height: 20px;
+              }
+            }
+            .add {
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+              row-gap: 10px;
+              width: 100%;
+              .address {
+                font-size: $fontSize;
+                font-weight: $fontWeight;
+                color: $blackColor;
+
+                @media screen and (max-width: 768px) {
+                  text-align: start;
+                  font-size: 15px;
+                }
+              }
+              .location {
+                @media screen and (min-width: 950px) and (max-width: 1250px) {
+                  width: 70%;
+                }
+                @media screen and (min-width: 601px) and (max-width: 949px) {
+                  width: 80%;
+                }
+                @media screen and (max-width: 600px) {
+                  width: 100%;
+                }
+                margin-top: 0px;
+                width: 90%;
+                display: flex;
+                // align-items: center;
+                column-gap: 10px;
+                font-size: $paraFont;
+                font-weight: $lightWeight;
+                color: $blackColor;
+                @media screen and (max-width: 500px) {
+                  font-size: 10px;
+                }
+                .street {
+                  width: 90%;
+                  color: #1b2734;
+                  font-size: 15px;
+                  font-weight: 600;
+                  span {
+                    // margin-left: 2px;
+                  }
+                }
+                span {
+                  color: #3d83df;
+                  font-size: 15px;
+                  font-weight: 600;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .devider {
+            width: 100%;
+            border-bottom: solid 1px $bgSec;
+          }
+          .timings {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+            padding: 1rem;
+            .hours {
+              color: #1b2734;
+              display: flex;
+              align-items: center;
+              font-size: $smHeadingSIze;
+              @media screen and (min-width: 300px) and (max-width: 425px) {
+                font-size: $paraFont;
+              }
+              span {
+                width: 100%;
+                margin-left: 10px;
+                text-align: start;
+                font-size: 15px;
+                color: #1b2734;
+                font-weight: $fontWeight;
+              }
+            }
+            .slots {
+              width: 96%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              flex-direction: row;
+              column-gap: 20px;
+              @media screen and (min-width: 300px) and (max-width: 900px) {
+                flex-direction: column;
+                row-gap: 1rem;
+                align-items: flex-start;
+                width: 100%;
+              }
+
+              @media screen and (min-width: 1024px) and (max-width: 1550px) {
+                flex-direction: row;
+                column-gap: 1px;
+                align-items: flex-start;
+                width: 80%;
+              }
+              .days {
+                font-size: 15px;
+                color: $grayColor;
+                width: 200px;
+                min-width: 220px;
+                // cursor: pointer;
+                @media screen and (min-width: 300px) and (max-width: 425px) {
+                  font-size: $paraFont;
+                }
+                @media screen and (min-width: 1024px) and (max-width: 1550px) {
+                  width: 150px;
+                  min-width: 177px;
+                  font-size: 12px;
+                }
+                // &:hover {
+                //   color: $primary;
+                //   font-weight: $fontWeight;
+                // }
+              }
+            }
+          }
+          .devider {
+            width: 100%;
+            border-bottom: solid 1px $bgSec;
+          }
+          .spec {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 15px;
+            row-gap: 7px;
+            flex-wrap: wrap;
+            width: 95%;
+            max-width: 100%;
+            font-size: $fontSize;
+            font-weight: $fontWeight;
+            padding: 1rem;
+            color: #1b2734;
+            @media screen and (max-width: 1200px) {
+              width: 98%;
+              // max-width: 98%;
+            }
+            span {
+              background: #e0f7f4;
+              border-radius: 3px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 4.54688px 6.76562px 3.95312px 6.82812px;
+              color: $greenColor;
+              font-size: 11px;
+              // cursor: pointer;
+            }
+            .moreless {
+              padding: 0.7rem;
+              display: flex;
+              .moreSpan {
+                // font-style: bold;
+                font-weight: 900;
+                font-size: 11.4px;
+                line-height: 11px;
+                /* identical to box height, or 100% */
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+
+                color: #3d83df;
+              }
+            }
+          }
+        }
+        .leftSide {
+          @media screen and (min-width: 300px) and (max-width: 1200px) {
+            width: 100%;
+            align-items: center;
+          }
+          border-left: 1px solid #edeff2;
+          padding: 1rem 2rem;
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          column-gap: 1rem;
+          align-items: center;
+          box-sizing: border-box;
+          justify-content: center;
+          align-items: center;
+          @media screen and (max-width: 768px) {
+            border: none;
+          }
+          @media screen and (min-width: 300px) and (max-width: 900px) {
+            border-left: none;
+            flex-direction: column;
+            row-gap: 10px;
+          }
+          .calenderWrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 55%;
+
+            @media screen and (min-width: 300px) and (max-width: 900px) {
+              width: 100%;
+              order: 1;
+            }
+          }
+          .availbleSlots {
+            @media screen and (min-width: 300px) and (max-width: 900px) {
+              width: 100%;
+              order: 2;
+            }
+
+            padding: 1rem 0.3rem;
+            width: 40%;
+            // height: 500px;
+            max-height: 510px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 1rem;
+            // padding: 1.5rem;
+            // margin: 2rem;
+            background-color: $dashBoardBackground;
+            box-sizing: border-box;
+            border-radius: 16px;
+            .heading {
+              font-size: 12px;
+              font-weight: $fontWeight;
+              color: $blackColor;
+              width: 100% !important;
+              text-align: center;
+              br {
+                display: block;
+                @media screen and (max-width: 1024px) {
+                  display: none;
+                }
+              }
+            }
+            .btnWrapper {
+              display: flex;
+              // justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              row-gap: 0.6rem;
+              width: 80%;
+              height: 350px;
+              max-height: 350px;
+              overflow-y: auto;
+              // padding-top: 3.3rem;
+              @media screen and (min-width: 300px) and (max-width: 900px) {
+                flex-direction: row;
+                column-gap: 1rem;
+                height: auto;
+                width: 90%;
+                // width: 470px;
+                // max-width: 520px;
+                overflow-y: hidden;
+                // padding-bottom: 1rem;
+                // padding-top: 1rem;
+              }
+
+              .btn {
+                background: #ffffff;
+                border-radius: 3px;
+                color: $primary;
+                font-size: $fontSize;
+                font-weight: $lightWeight;
+                text-align: center;
+                padding: 1rem 2rem;
+                width: 70px;
+                cursor: pointer;
+                @media screen and (min-width: 300px) and (max-width: 900px) {
+                  font-size: $paraFont;
+                  width: 120;
+                  min-width: 130px;
+                  padding: 1rem 0.7rem;
+                }
+                &:hover {
+                  background-color: $primary;
+                  color: $whiteColor;
+                }
+              }
+
+              .selected {
+                background: $primary;
+                border-radius: 3px;
+                color: #ffffff;
+                font-size: $fontSize;
+                font-weight: $lightWeight;
+                text-align: center;
+                padding: 1rem 2rem;
+                width: 70px;
+                cursor: pointer;
+                @media screen and (min-width: 300px) and (max-width: 900px) {
+                  font-size: $paraFont;
+                  width: 120;
+                  min-width: 130px;
+                  padding: 1rem 0.7rem;
+                }
+              }
+              p {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
+              }
+            }
+            .bookBtn {
+              background: $primary;
+              border-radius: 3px;
+              color: $whiteColor;
+              font-size: 15px;
+              font-weight: 500;
+              text-align: center;
+              width: 90%;
+              margin-top: 0.7rem;
+              cursor: pointer;
+              @media screen and (min-width: 300px) and (max-width: 425px) {
+                // width: 160px;
+                width: 100%;
+                font-size: $paraFont;
+              }
+              button {
+                background: $primary;
+                border-radius: 3px;
+                color: $whiteColor;
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 500;
+                text-align: center;
+                border: 1px solid $primary;
+                padding: 0.8rem 1rem;
+                width: 100%;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: "Roboto";
+                @media screen and (min-width: 300px) and (max-width: 1520px) {
+                  padding: 0.8rem 0.2rem;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .hoursBtn {
+            background: transparent;
+            border-radius: 3px;
+            color: #1b2734;
+            border: 1px solid #dcdfe3;
+            font-size: $fontSize;
+            font-weight: $lightWeight;
+            text-align: center;
+            padding: 1rem 1.5rem;
+            width: 200px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              background-color: #3d83df;
+              border-color: 1px solid #3d83df;
+              color: $whiteColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

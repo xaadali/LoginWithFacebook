@@ -1,0 +1,548 @@
+@import "../../../stylesConstants/colors.scss";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  h1 {
+    width: 100%;
+    justify-content: flex-start;
+    display: none;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+  .wrapper {
+    width: 68%;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      width: 100% !important;
+    }
+    .carBox {
+      @media screen and (max-width: 1400px) {
+        width: 100%;
+      }
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      row-gap: 2rem;
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+      .cardWrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0.9rem;
+        column-gap: 1rem;
+        @media screen and (min-width: 600px) and (max-width: 1040px) {
+          justify-content: center;
+        }
+
+        .card {
+          width: 100%;
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #dcdfe3;
+          border-radius: $borderRadius;
+          @media screen and (max-width: 500px) {
+            padding: 0rem;
+          }
+
+          @media screen and (max-width: 700px) {
+            flex-direction: column;
+          }
+          .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            flex-direction: row;
+            padding: 1rem;
+            box-sizing: border-box;
+            // @media screen and (max-width: 400px) {
+            //   padding: 0.5rem;
+            // }
+            // @media screen and (max-width: 500px) {
+            //   padding: 1rem;
+            // }
+            .heading {
+              font-size: 18px;
+              font-weight: $fontWeight;
+              color: #1b2734;
+              text-align: left;
+              @media screen and (max-width: 600px) {
+                font-size: $paraFont;
+              }
+              @media screen and (max-width: 500px) {
+                font-size: 18px;
+              }
+            }
+            .btnWrapper {
+              // @media screen and (max-width: 400px) {
+              //   width: 100%;
+              //   display: flex;
+              //   justify-content: flex-start;
+              //   align-items: flex-start;
+              // }
+              width: 40%;
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              @media screen and (max-width: 600px) {
+                width: 70%;
+              }
+              .reviewBtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 1rem 1rem;
+                color: $whiteColor;
+                background-color: $primary;
+                border-radius: $borderRadius;
+                border: 1px transparent;
+                cursor: pointer;
+                @media screen and (max-width: 600px) {
+                  font-size: $smPara;
+                  padding: 0.5rem 1rem;
+                }
+              }
+              .blockreviewbtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 1rem 1rem;
+                color: $whiteColor;
+                background-color: $primary;
+                border-radius: $borderRadius;
+                cursor: not-allowed;
+                border: 1px transparent;
+                @media screen and (max-width: 600px) {
+                  font-size: $smPara;
+                  padding: 0.5rem 1rem;
+                }
+              }
+            }
+          }
+          .detailsWrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-top: 1px solid #dcdfe3;
+            border-bottom: 1px solid #dcdfe3;
+
+            @media screen and (min-width: 300px) and (max-width: 700px) {
+              flex-direction: column;
+            }
+            .detail {
+              @media screen and (min-width: 300px) and (max-width: 700px) {
+                width: 100%;
+                border-bottom: 2px solid #dcdfe3;
+                border-right: none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+              @media screen and (min-width: 1024px) and (max-width: 1370px) {
+                flex-direction: column;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+              width: 40%;
+              display: flex;
+              flex-direction: row;
+              column-gap: 0.7rem;
+              border-right: 2px solid #dcdfe3;
+              padding: 1rem;
+              box-sizing: border-box;
+              justify-content: flex-start;
+              align-items: center;
+              @media screen and (min-width: 701px) and (max-width: 1100px) {
+                flex-direction: column;
+                row-gap: 1rem;
+              }
+
+              .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f2f2f2;
+                height: 90px;
+                width: 100px;
+                min-width: 100px;
+                border-radius: 4px;
+
+                @media screen and (min-width: 300px) and (max-width: 1300px) {
+                  height: 80px;
+                  width: 80px;
+                }
+                @media screen and (min-width: 1101px) and (max-width: 1500px) {
+                  height: 90px;
+                  width: 90px;
+                }
+                @media screen and (max-width: 500px) {
+                  border-radius: 8px;
+                }
+
+                img {
+                  @media screen and (min-width: 300px) and (max-width: 1500px) {
+                    width: 80%;
+                    height: 80%;
+                    // max-width: 60%;
+                  }
+                  width: 90%;
+                  height: 90%;
+                  // max-width: 80%;
+                }
+              }
+              .review {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                row-gap: 0.4rem;
+                @media screen and (max-width: 500px) {
+                  margin-top: 10px;
+                }
+                .brandName {
+                  font-size: 18px;
+                  color: #1b2734;
+                  font-weight: $fontWeight;
+                  letter-spacing: 1px;
+                  @media screen and (min-width: 300px) and (max-width: 1300px) {
+                    font-size: $fontSize;
+                  }
+                }
+                .title {
+                  font-size: 15px;
+                  color: #1b2734;
+                  font-weight: $lightWeight;
+                }
+                .ratingWrapper {
+                  font-size: 20px;
+                  color: $greenColor;
+                  align-items: center;
+                  display: flex;
+                  justify-content: flex-start;
+                  flex-direction: row;
+                  column-gap: 0.5rem;
+                  @media screen and (min-width: 300px) and (max-width: 1300px) {
+                    font-size: 20px;
+                  }
+                  .ratingBox {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #00c3a5;
+                    border-radius: 100%;
+                  }
+                  span {
+                    font-size: 14px;
+                    color: $grayColor;
+                    margin-left: 6px;
+                    @media screen and (min-width: 300px) and (max-width: 1300px) {
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+              .location {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                column-gap: 1rem;
+                font-size: $paraFont;
+                font-weight: $lightWeight;
+                color: $blackColor;
+
+                @media screen and (min-width: 300px) and (max-width: 1300px) {
+                  font-size: 14px;
+                }
+                @media screen and (min-width: 1101px) and (max-width: 1500px) {
+                  font-size: $fontSize;
+                }
+                .street {
+                  width: 90%;
+                  // height: 30px;
+                  // overflow-y: auto;
+                  @media screen and (max-width: 599px) {
+                    font-size: 11px;
+                  }
+                  @media screen and (min-width: 600px) and (max-width: 1300px) {
+                    font-size: 16px;
+                  }
+                }
+                span {
+                  color: $primary;
+                }
+              }
+            }
+            .contactWrapper {
+              @media screen and (min-width: 300px) and (max-width: 700px) {
+                width: 100%;
+                border-bottom: 2px solid #dcdfe3;
+                border-right: none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+              @media screen and (max-width: 500px) {
+                display: none;
+              }
+              width: 30%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              row-gap: 1rem;
+              border-right: 1px solid #dcdfe3;
+              padding: 1rem;
+              box-sizing: border-box;
+              .contactHeading {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                font-size: 16px;
+                font-weight: $fontWeight;
+                color: #1b2734;
+                @media screen and (min-width: 300px) and (max-width: 1300px) {
+                  font-size: $fontSize;
+                }
+              }
+              .contactNumber {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: row;
+                column-gap: 10px;
+                color: #627282;
+                font-size: $paraFont;
+                span {
+                  @media screen and (min-width: 300px) and (max-width: 1300px) {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+            .dateTimeWrapper {
+              @media screen and (min-width: 300px) and (max-width: 700px) {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+              @media screen and (max-width: 500px) {
+                display: none;
+              }
+              width: 30%;
+              display: flex;
+              flex-direction: column;
+              row-gap: 1rem;
+              padding: 1rem;
+              box-sizing: border-box;
+              justify-content: center;
+              align-items: center;
+
+              .dataWrapper {
+                width: 100%;
+                justify-content: flex-start;
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.5rem;
+                .id {
+                  font-size: 16px;
+                  font-weight: $fontWeight;
+                  color: #1b2734;
+
+                  @media screen and (min-width: 300px) and (max-width: 1300px) {
+                    font-size: $fontSize;
+                  }
+                }
+                span {
+                  font-size: $paraFont;
+                  font-weight: $lightWeight;
+                  color: #1b2734;
+                  word-break: break-all;
+                  width: 90%;
+                  @media screen and (min-width: 300px) and (max-width: 1300px) {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+
+            .mobileView {
+              @media screen and (min-width: 699px) {
+                display: none;
+              }
+              .uppercontent {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                column-gap: 20px;
+                .contactWrapper2 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  row-gap: 1rem;
+                  padding: 1rem;
+                  box-sizing: border-box;
+
+                  .contactHeading {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    font-size: 16px;
+                    font-weight: $fontWeight;
+                    color: #1b2734;
+                  }
+                  .contactNumber {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: row;
+                    column-gap: 10px;
+                    color: #627282;
+                    font-size: $paraFont;
+                  }
+                }
+                .dateTimeWrapper2 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  row-gap: 1rem;
+                  padding: 1rem;
+                  box-sizing: border-box;
+
+                  .dataWrapper {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 0.5rem;
+                    .id {
+                      font-size: 16px;
+                      font-weight: $fontWeight;
+                      color: #1b2734;
+                    }
+                    span {
+                      font-size: $paraFont;
+                      font-weight: $lightWeight;
+                      color: #1b2734;
+                      word-break: break-all;
+                    }
+                  }
+                }
+              }
+              .lowerContent2 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 1rem;
+                padding: 1rem;
+                box-sizing: border-box;
+                .dataWrapper {
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  display: flex;
+                  flex-direction: column;
+                  row-gap: 0.5rem;
+                  .id {
+                    font-size: 16px;
+                    font-weight: $fontWeight;
+                    color: #1b2734;
+                  }
+                  span {
+                    font-size: $paraFont;
+                    font-weight: $lightWeight;
+                    color: #1b2734;
+                  }
+                }
+              }
+            }
+          }
+          .informationWrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.9rem;
+            box-sizing: border-box;
+            padding: 1rem;
+            border-bottom: 1px solid #dcdfe3;
+
+            .infoHeading {
+              font-size: $fontSize;
+              font-weight: $fontWeight;
+              color: $blackColor;
+            }
+            .infoWrapper {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              column-gap: 5rem;
+              flex-wrap: wrap;
+              row-gap: 1.5rem;
+              @media screen and (min-width: 300px) and (max-width: 1300px) {
+                column-gap: 2rem;
+                row-gap: 1rem;
+              }
+              .nameWrapper {
+                font-size: 16px;
+                font-weight: $lightWeight;
+                color: #1b2734;
+                @media screen and (min-width: 300px) and (max-width: 1300px) {
+                  font-size: 14px;
+                  width: 43%;
+                }
+                span {
+                  // color: #627282;
+                  // font-size: 16px;
+                  // text-transform: uppercase;
+                  button {
+                    border: 1px solid transparent;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .nodata {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
